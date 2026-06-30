@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Simple Shop</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <!-- Header -->
+  <header class="header">
+    <div class="container">
+      <div class="logo">SimpleShop</div>
+
+      <nav class="nav">
+        <a href="#">خانه</a>
+        <a href="#products">محصولات</a>
+        <a href="#">تماس</a>
+      </nav>
+
+      <a href="#products" class="btn">ثبت سفارش</a>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section class="hero">
+    <div class="container hero-grid">
+
+      <div class="hero-text">
+        <h1>خرید ساده، سریع و حرفه‌ای</h1>
+        <p>محصولات منتخب با تجربه خرید بدون پیچیدگی</p>
+        <a href="#products" class="btn">مشاهده محصولات</a>
+      </div>
+
+      <div class="hero-image">
+        <div class="placeholder"></div>
+      </div>
+      <section class="cta">
+  <div class="container">
+    <h2>همین حالا سفارش خود را ثبت کنید</h2>
+    <a class="btn" onclick="openPopup()">شروع سفارش</a>
+  </div>
+</section>
+
+    </div>
+  </section>
+
+  <!-- Products -->
+  <section id="products" class="products">
+    <div class="container">
+
+      <h2>محصولات</h2>
+
+      <div class="grid">
+
+        <div class="card">
+          <h3>محصول اول</h3>
+          <p>1,200,000 تومان</p>
+        </div>
+
+        <div class="card">
+          <h3>محصول دوم</h3>
+          <p>2,500,000 تومان</p>
+        </div>
+
+        <div class="card">
+          <h3>محصول سوم</h3>
+          <p>3,100,000 تومان</p>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+<section class="trust">
+
+  <div class="container">
+
+    <h2>چرا ما را انتخاب کنید؟</h2>
+
+    <div class="trust-grid">
+
+      <div class="trust-card">
+        <h3>🚚 ارسال سریع</h3>
+        <p>ارسال سفارش در کمترین زمان ممکن</p>
+      </div>
+
+      <div class="trust-card">
+        <h3>🔒 پرداخت امن</h3>
+        <p>پرداخت کاملاً امن و قابل اعتماد</p>
+      </div>
+
+      <div class="trust-card">
+        <h3>⭐ کیفیت بالا</h3>
+        <p>فقط محصولات تست‌شده و باکیفیت</p>
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+<section class="faq">
+
+  <div class="container">
+
+    <h2>سوالات متداول</h2>
+
+    <div class="faq-item">
+      <h3>چطور سفارش ثبت کنم؟</h3>
+      <p>روی دکمه خرید کلیک کنید و فرم را تکمیل کنید.</p>
+    </div>
+
+    <div class="faq-item">
+      <h3>ارسال چقدر طول می‌کشد؟</h3>
+      <p>بین ۱ تا ۳ روز کاری بسته به موقعیت شما.</p>
+    </div>
+
+    <div class="faq-item">
+      <h3>پرداخت امن است؟</h3>
+      <p>بله، تمامی پرداخت‌ها از طریق درگاه امن انجام می‌شود.</p>
+    </div>
+
+  </div>
+
+</section>
+  <!-- Footer -->
+  <footer class="footer">
+    <p>© SimpleShop - All Rights Reserved</p>
+  </footer>
+
+  <script src="app.js"></script>
+<div class="popup" id="popup">
+
+  <div class="popup-content">
+
+    <h2>ثبت سفارش</h2>
+
+    <input type="text" id="name" placeholder="نام کامل">
+    <input type="text" id="phone" placeholder="شماره تماس">
+    <textarea id="desc" placeholder="توضیحات سفارش"></textarea>
+
+    <button class="btn" onclick="submitOrder()">ارسال سفارش</button>
+
+    <button class="close" onclick="closePopup()">بستن</button>
+
+  </div>
+
+</div>
+</body>
+
+</html>
